@@ -3,7 +3,7 @@ const app = express();
 
 const PORT = process.env.PORT || 80;
 
-app.get('/', () => {
+app.get('/', (req, res) => {
     res.end('<h1>test run</h1>');
 });
 
