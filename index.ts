@@ -7,7 +7,6 @@ mongoClient.connect(function (err, client) {
     if (err) {
         return console.log(err);
     }
-    
 
     console.log('connect to db !');
 
@@ -19,7 +18,7 @@ const server = express();
 const PORT = process.env.PORT || 80;
 
 server.get('/', (req, res) => {
-    res.end('<h1>test123</h1>');
+    res.end('mongodb');
 });
 
 server.listen(PORT, () => {
